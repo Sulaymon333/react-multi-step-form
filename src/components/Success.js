@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import AppBar from 'material-ui/AppBar';
 
-const Success = props => {
+const Success = () => {
     return (
-        <div>
-            <h2>Success</h2>
-            <p>An Email will be sent to you shortly</p>
-        </div>
+        <MuiThemeProvider>
+            <>
+                <AppBar title="Confirm User Data" />
+                <h1>Thank you for Signing up!</h1>
+                <p>Please continue with further instructions from your Email.</p>
+            </>
+        </MuiThemeProvider>
     );
 };
 

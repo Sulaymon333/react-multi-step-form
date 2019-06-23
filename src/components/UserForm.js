@@ -56,7 +56,13 @@ class UserForm extends Component {
                     />
                 );
             case 3:
-                return <Confirm handlePrevStep={this.handlePrevStep} handleNextStep={this.handleNextStep} />;
+                return (
+                    <Confirm
+                        handlePrevStep={this.handlePrevStep}
+                        handleNextStep={this.handleNextStep}
+                        values={values}
+                    />
+                );
             case 4:
                 return <Success />;
         }
